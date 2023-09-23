@@ -1,0 +1,15 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /minio
+
+spring:
+  # 配置文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+oss:
+  endpoint: ${ENDPOINT:https:www.keyle.fun:19000}
+  access-key: ${ACCESS_KEY:minioadmin}
+  secret-key: ${SECRET_KEY:minioadmin}
